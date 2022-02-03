@@ -1,8 +1,10 @@
 import vikingsLogo from '../assets/vikingsLogo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FcSearch} from 'react-icons/fc';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 import './Header.css'
+import react from "react";
 
 const Header = () => {
     return (
@@ -13,9 +15,15 @@ const Header = () => {
             <div className="holderTitle">
                 <h1>BERSERK SHOP .</h1>
             <div className="holderSearch">
-                  
-                <div className="searchBox"><GiHamburgerMenu className="holderBurger" />Catégories</div>  
-                <div className="searchBox"><FcSearch/> <input className="holderZoom" type="text" name="text" class="search" placeholder="Recherchez ici!"/></div>
+                <div className="searchBox" id='searchFirstBox'>
+                    <GiHamburgerMenu className="holderBurger" />
+                    <p>Catégories</p>
+                    <AiOutlineArrowDown />
+                </div>
+                <div className="searchBox">
+                    <AiOutlineSearch />
+                    <input id="inputSearch" type="text" name="text" class="search" placeholder="Recherchez ici!"/>
+                </div>
                 <div id='searchButton'>Rechercher ()</div>
             </div>
             </div>

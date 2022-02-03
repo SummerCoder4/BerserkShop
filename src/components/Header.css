@@ -12,6 +12,11 @@
     font-family: var(--text-font);
 }
 
+#searchFirstBox {
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
 .logo {
     width: 200px
 }
@@ -33,8 +38,19 @@
    color: var(--white-color);
    position: absolute;
    padding: 12px;
+    font-family: var(--text-font);
 }
 
+#inputSearch {
+    background: transparent;
+    border: none;
+}
+
+#inputSearch:focus {
+    border: none;
+    outline: none;
+    transition: 1s ease in;
+}
 
 .h1 {
     display: flex;
@@ -72,6 +88,7 @@
     box-shadow: 1px 1px 5px 2px #1b1e1be6;
     position: relative;
 }
+
 .categoriesStyle {
     width: 250px;
     margin-left: 200px;   
@@ -79,19 +96,29 @@
 
 .searchBox {
     background: var(--grey-color);
-    padding: 6px;
-    color: var(--primary-color);
     padding: 12px;
     box-shadow: 1px 1px 2px #939393b3;
-    font-family: var(--text-font);
     align-items: center;
     display: flex;
     flex-direction: row;
+    height: 50px;
+}
+
+.searchBox > p {
+    color: var(--primary-color);
+    font-family: var(--text-font);
+}
+
+.searchBox > svg {
+    margin-right: 6px;
+    margin-left: 6px;
+    color: var(--primary-color);
 }
 
 .body {
     background-color: #8ebf42;
-  }
+}
+
 .form {
     width: 400px;
     margin: auto;
