@@ -1,0 +1,65 @@
+.Img {
+    height: 200px;
+    width: 200px;
+}
+
+.Annonces {
+    margin-top: 50px;
+}
+
+.Tannonces {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.holder {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
+
+.titreAnnonces {
+    margin-left: 20px;
+    color: black;
+}
+
+.numAnnonces {
+    margin-left: 248px;
+    color: black;
+}
+
+.num {
+    color: gainsboro;
+}
+
+.or {
+    color: black;
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.btnLivraison {
+    background-color: #51A583;
+    margin-left: 20px;
+    margin-top: 6px;
+    height: 28px;
+    width: 198px;
+    color: white;
+}
+
+.btnLivraison:hover {
+    opacity: 0.8;
+}
+
+.btnSavoir {
+    background-color: #51A583;
+    height: 28px;
+    width: 198px;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
