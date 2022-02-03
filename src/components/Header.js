@@ -6,7 +6,7 @@ import { FcSearch} from 'react-icons/fc';
 import { Link } from "react-router-dom"
 import './Header.css'
 
-const Header = () => {
+const Header = ({ data }) => {
     return (
         <div className="headerContainer">
             <Link to='/'>
@@ -27,7 +27,7 @@ const Header = () => {
                         <input id="inputSearch" type="text" name="text" class="search" placeholder="Recherchez ici!"/>
                     </div>
                     <div id='searchButton'>
-                        Rechercher ()
+                        Rechercher ({data.length})
                     </div>
                 </div>
             </div>
