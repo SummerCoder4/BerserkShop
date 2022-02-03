@@ -1,0 +1,30 @@
+
+.mainFooter {
+    color: white;
+    background-color: #51A583;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    margin-left: 30%;
+}
+
+.col-sm {
+    margin-left: 4%;
+}
+
+.trait {
+    margin-left: 40px;
+}
+
+.col1 {
+    margin-left: 100px;
+}
+
+.col2 {
+    margin-left: 50px;
+}

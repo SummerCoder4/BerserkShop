@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header from './Header'
 
 const Home = () => {
     return(
@@ -6,7 +6,7 @@ const Home = () => {
     <Header />
     </div>
     )
-     
+
 }
 
 export default Home

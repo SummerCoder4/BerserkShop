@@ -1,4 +1,4 @@
-import '../Components/Annonces.css'
+import './Annonces.css'
 import Epee from '../Image/Epee.jpg'
 
 const Annonces =() => {
