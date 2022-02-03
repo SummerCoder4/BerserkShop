@@ -38,12 +38,16 @@
    color: var(--white-color);
    position: absolute;
    padding: 12px;
+<<<<<<< HEAD
     font-family: var(--text-font);
 }
 
 #inputSearch {
     background: transparent;
     border: none;
+=======
+   right: 22px;
+>>>>>>> d9ae4d36f20b0a1a967e3729c672e40e314013df
 }
 
 #inputSearch:focus {
