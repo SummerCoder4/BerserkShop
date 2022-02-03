@@ -1,0 +1,117 @@
+#searchButton {
+    background: var(--second-color);
+    color: var(--white-color);
+    padding: 12px;
+    position: absolute;
+    bottom: -10%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #7e7e7e7a;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--text-font);
+}
+
+.logo {
+    width: 200px
+}
+
+.firstButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    height: 35px;
+    align-self: start;
+    margin-top:20px;
+ 
+}
+
+.firstButtonStyle {
+   background-color: var(--second-color);
+   border-radius: 2px;
+   cursor: pointer;
+   color: var(--white-color);
+   position: absolute;
+   padding: 12px;
+   right: 22px;
+}
+
+
+.h1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.holderTitle {
+    align-self: start;
+    flex-grow: 2;
+    padding-top: 12px;
+}
+
+.holderTitle > h1 {
+    color: var(--second-color);
+}
+
+.holderSearch {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 30%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 2px #1b1e1be6;
+    position: relative;
+}
+.categoriesStyle {
+    width: 250px;
+    margin-left: 200px;   
+}
+
+.searchBox {
+    background: var(--grey-color);
+    padding: 6px;
+    color: var(--primary-color);
+    padding: 12px;
+    box-shadow: 1px 1px 2px #939393b3;
+    font-family: var(--text-font);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.body {
+    background-color: #8ebf42;
+  }
+.form {
+    width: 400px;
+    margin: auto;
+    margin-top: 250px;
+}
+.input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+}
+.search {
+    width: 75%;
+}
+.submit {
+    width: 70px;
+    background-color: #1cc939;
+    color: #ffffff;
+}
+
+/* .holderBurger {
+    color
+} */
