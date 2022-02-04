@@ -4,6 +4,7 @@ import './style.css';
 import Home from './components/Home'
 import PosterAnnonce from './screens/PosterAnnonce';
 import Footer from './components/Footer';
+import Ragnar from './components/Ragnar';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/Poster' element={<PosterAnnonce/>} />
       </Routes>
       <Annonces />
+      <Ragnar />
       </div>
       <Footer />
     </div>
