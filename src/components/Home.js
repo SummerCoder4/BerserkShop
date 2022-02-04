@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header from './Header'
 import Annonces from "./Annonces";
 import { useEffect, useState } from "react";
 import Pattern from '../assets/pattern.png';

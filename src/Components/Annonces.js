@@ -1,5 +1,5 @@
-import Epee from '../Image/Epee.jpg';
-import './Annonces.css';
+import './Annonces.css'
+import Epee from '../Image/Epee.jpg'
 
 const Annonces =(props) => {
     return (
