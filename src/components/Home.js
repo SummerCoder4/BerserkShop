@@ -31,10 +31,8 @@ const Home = () => {
         let value = e.target.value;
         setSearchTerm(value)
     }
-   
-           useEffect(() =>{
 
-           
+    useEffect(() =>{
         let newArray = [];
         let newIndex;
 
@@ -65,7 +63,7 @@ const Home = () => {
             <h2 id='annonceRoyaume'>ANNONCE DU ROYAUME</h2>
             <img id='patternViking' src={Pattern} />
             <div className='containerAnnonce'>
-                { data !== [] && mapThis === "default" &&
+                { data !== [] && mapThis === "default" && searchTerm === "" &&
                     data.slice(0, 5).map((article, i) => {
                         console.log(data[0].image)
                         if(article) {
@@ -82,7 +80,7 @@ const Home = () => {
                         }
                     })
                 }
-                { data !== [] && mapThis !== "default" &&
+                { data !== [] && mapThis !== "default" && searchTerm === "" &&
                     mapThis.map((article, i) => {
                         console.log(data[0].image)
                         if(article) {
@@ -99,12 +97,10 @@ const Home = () => {
                         }
                     })
                 }
-            </div>
-            <div>
-                {recups
-                    .filter((val, index) => {
+                { mapThis === "default" && searchTerm !== "" &&
+                    recups.filter((val, index) => {
                         return val.name.includes(searchTerm);
-                    }) 
+                    })
                     .map((val) => {
                         return (
                             <Annonces
