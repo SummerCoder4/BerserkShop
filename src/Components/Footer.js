@@ -1,4 +1,4 @@
-import '../components/Footer.css'
+import './Footer.css'
 
 const Footer =() => {
     return (
@@ -18,7 +18,7 @@ const Footer =() => {
                         <h4>STAFF</h4>
                         <ul className="listeUnstyled">
                             <li>Jules le Noble</li>
-                            <li>Yorgan la Barrière</li>
+                            <li>Yorgan Côte de fer</li>
                             <li>Matthias la Foudre</li>
                             <li>Déo le Fléau</li>
                         </ul>

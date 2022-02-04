@@ -1,6 +1,7 @@
 import vikingsLogo from '../assets/vikingsLogo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { ImCross } from 'react-icons/im'
 import { Link } from "react-router-dom"
 import './Header.css'
 import { useState } from "react";
@@ -50,11 +51,9 @@ const Header = ({ data, setFilterData, mapThis, handleSearch }) => {
                         <h1 className="berk">
                             BERKSERK SHOP.
                             <button className="croix" onClick={() => setIsOpen(!isOpen)}>
-                                X
+                            <ImCross className='cross'/>
                             </button>
-                            <button className="onglet">
-                                Déposer une annonce
-                            </button>
+                            
                         </h1>
                     </div>
                     <div className="holderContainer">
@@ -73,6 +72,15 @@ const Header = ({ data, setFilterData, mapThis, handleSearch }) => {
                                         <div className="reponse">
                                             <input className="searchs" type="text" name="text"></input>
                                         </div>
+                                        <div className='photo'>
+                                        <p5>Collez l'url de la photo</p5>
+                                        <div className="reponse">
+                                        <input className="searchs" type="text" name="text"></input>
+                                        </div>
+                                        </div>
+                                        <button className="onglet">
+                                        Déposer une annonce
+                                        </button>
                                     </div>
                                 </div>
                             </div>
