@@ -1,13 +1,10 @@
 import vikingsLogo from '../assets/vikingsLogo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineSearch } from 'react-icons/ai';
-import { AiOutlineArrowDown } from 'react-icons/ai';
-import { FcSearch} from 'react-icons/fc';
 import { Link } from "react-router-dom"
 import './Header.css'
 
-const Header = ({ data, handleSearch }) => {
-   
+const Header = ({ data, setFilterData, mapThis, handleSearch }) => {
     return (
         <div className="headerContainer">
             <Link to='/'>
@@ -20,8 +17,12 @@ const Header = ({ data, handleSearch }) => {
                 <div className="holderSearch">
                     <div className="searchBox" id='searchFirstBox'>
                         <GiHamburgerMenu className="holderBurger" />
-                        <p>Catégories</p>
-                        <AiOutlineArrowDown />
+                        <select id="selectCategorie" name="categories" onChange={(e) => setFilterData(e.target.value)}>
+                            <option value="categorie">Categories</option>
+                            <option value="arme">Armes</option>
+                            <option value="propriete">Proprietes</option>
+                            <option value="tresor">Tresors</option>
+                        </select>
                     </div>
                     <div className="searchBox">
                         <AiOutlineSearch />
@@ -34,7 +35,7 @@ const Header = ({ data, handleSearch }) => {
                         onChange={handleSearch}/>
                     </div>
                     <div id='searchButton'>
-                        Rechercher ({data.length})
+                        Rechercher ({mapThis === "default" ? data.length : mapThis.length})
                     </div>
                 </div>
             </div>
