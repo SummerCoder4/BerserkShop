@@ -28,15 +28,15 @@
     height: 35px;
     align-self: start;
     margin-top:20px;
- 
+
 }
 
 .firstButtonStyle {
-   background-color: var(--second-color);
-   border-radius: 2px;
-   cursor: pointer;
-   color: var(--white-color);
-   padding: 12px;
+    background-color: var(--second-color);
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+    padding: 12px;
     font-family: var(--text-font);
 }
 
@@ -97,10 +97,9 @@
     box-shadow: 1px 1px 5px 2px #1b1e1be6;
     position: relative;
 }
-
 .categoriesStyle {
     width: 250px;
-    margin-left: 200px;   
+    margin-left: 200px;
 }
 
 .searchBox {
@@ -140,7 +139,7 @@
 }
 
 #selectCategorie:focus {
-   outline: none;
+    outline: none;
 }
 
 .input {
@@ -157,6 +156,99 @@
     color: #ffffff;
 }
 
-/* .holderBurger {
-    color
-} */
+.containerModal {
+    background: rgb(36 39 36 / 80%);
+    width: 882px;
+    height: 795px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    display: none;
+    z-index: 100;
+    transform: translate(50%, -50%);
+    backdrop-filter: blur(10px);
+}
+
+
+.active {
+    display: block;
+}
+
+.holderContainer {
+    width: 600px;
+    height: 595px;
+    background-color: #7a867f33;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 100%;
+    position: absolute;
+
+}
+
+.headerPoster {
+    background-color: #7a867f65;
+    width: 881px;
+    height: 40px;
+
+}
+
+.croix {
+
+}
+
+.berk {
+    background-color: #51A583;
+}
+
+.onglet {
+    height: 2.5rem;
+    background-color: #51A583;
+    margin-left: 175px;
+    position: fixed;
+    border-block: inherit;
+    text-decoration: none;
+}
+
+.p2 {
+    color: white;
+}
+
+
+.titre {
+    color: white;
+    margin-top: 40px;
+}
+
+.searchs {
+    width: 242px;
+    margin-left: 2px;
+    height: 1.2rem;
+    border-block-color: revert;
+    border-radius: 20px;
+}
+
+
+.photo {
+    background-color: #7a867f33;
+    margin-top: 90px;
+    margin-left: 1px;
+    height: 220px;
+    width: 600px;
+}
+
+
+.photo1 {
+    background-color: turquoise;
+    height: 100px;
+    width: 100px;
+}
+
+
+.catégorie {
+    margin-top: 35px;
+}
+
+.prix {
+    margin-top: 35px;
+}

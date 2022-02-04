@@ -47,4 +47,5 @@ svg {
 
 ul, li {
     list-style: none;
+    font-family: var(--text-font);
 }

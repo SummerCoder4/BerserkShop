@@ -2,7 +2,6 @@
 .mainFooter {
     color: white;
     background-color: #51A583;
-    padding-top: 3em;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -11,11 +10,16 @@
 
 .row {
     display: flex;
-    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row > div {
+    padding: 1%;
 }
 
 .col-sm {
-    margin-left: 4%;
+    padding: 12px;
 }
 
 .trait {
