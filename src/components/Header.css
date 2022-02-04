@@ -140,3 +140,99 @@
 /* .holderBurger {
     color
 } */
+
+.container {
+    background: rgb(36, 39, 36);
+    width: 882px;
+    height: 795px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    display: none;
+    /* opacity: 50%; */
+    right: 519px;
+    top: auto;
+    top: 100px;
+}
+
+
+.active {
+    display: block;
+}
+
+.holderContainer {
+    width: 600px;
+    height: 595px;
+    background-color: #7a867f33;
+    margin-top: 53px;
+    margin-left: 128px;
+    opacity: 100%;
+    
+}
+
+.headerPoster {
+    background-color: #7a867f65;
+    width: 881px;
+    height: 40px;
+    
+}
+
+.croix {
+    
+}
+
+.berk {
+    background-color: #51A583;
+}
+
+.onglet {
+    height: 2.5rem;
+    background-color: #51A583;
+    margin-left: 175px;
+    position: fixed;
+    border-block: inherit;
+    text-decoration: none;
+}
+
+.p2 {
+    color: white;
+}
+
+
+.titre {
+    color: white;
+    margin-top: 40px;
+}
+
+.searchs {
+    width: 242px;
+    margin-left: 2px;
+    height: 1.2rem;
+    border-block-color: revert;
+    border-radius: 20px;
+}
+
+
+.photo {
+    background-color: #7a867f33;
+    margin-top: 90px;
+    margin-left: 1px;
+    height: 220px;
+    width: 600px;
+}
+
+
+.photo1 {
+    background-color: turquoise;
+    height: 100px;
+    width: 100px;
+}
+
+
+.catégorie {
+    margin-top: 35px;
+}
+
+.prix {
+    margin-top: 35px;
+}
