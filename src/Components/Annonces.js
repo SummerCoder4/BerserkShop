@@ -1,24 +1,24 @@
 import './Annonces.css'
 import Epee from '../Image/Epee.jpg'
 
-const Annonces =() => {
+const Annonces =(props) => {
     return (
-        <div className="Annonces">
-            <div className='holder'>
-                <div className='Image'>
-                    <img className='Img'  src={Epee}  alt='ImgAnnonces' />
+        <div className="annonce">
+            <div className='holderAnnonce'>
+                <div id='gradientFilter'></div>
+                <div className='holderImg'>
+                    <img className='imgAnnonce' src={props.img}  alt='ImgAnnonces' />
                 </div>
-                <div className='TextAnnonces'>
-                    <h3 className='titreAnnonces'> Epee du Roi Ragnar Lothbrok</h3>
-                    <p className='or'>14 or</p>
+                <div className='textAnnonces'>
+                    <h3 className='titreAnnonces'> {props.title}</h3>
+                    <p className='or'>{props.prix} or </p>
                     <button className='btnLivraison'>Livraison possible</button>
                 </div>
                 <button className='btnSavoir'>En savoir plus</button>
                 <div className='numAnnonces'>
-                    <p className='num'>annonces 18</p>
+                    <p className='num'>{props.date}</p>
                 </div>
             </div>
-
         </div>
 );
 }

@@ -6,13 +6,12 @@ import PosterAnnonce from './screens/PosterAnnonce';
 import Footer from './components/Footer';
 import Ragnar from './components/Ragnar';
 
+
 function App() {
   return (
     <div className="main">
-    <div className='mainWrap'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Poster' element={<PosterAnnonce/>} />
       </Routes>
       <Annonces />
       <Ragnar />
