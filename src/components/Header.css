@@ -133,6 +133,16 @@
     margin: auto;
     margin-top: 250px;
 }
+
+#selectCategorie {
+    background: transparent;
+    border: none;
+}
+
+#selectCategorie:focus {
+   outline: none;
+}
+
 .input {
     padding: 4px 10px;
     border: 0;
