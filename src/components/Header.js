@@ -4,7 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { Link } from "react-router-dom"
 import './Header.css'
 
-const Header = ({ data, setFilterData }) => {
+const Header = ({ data, setFilterData, mapThis }) => {
     return (
         <div className="headerContainer">
             <Link to='/'>
@@ -29,7 +29,7 @@ const Header = ({ data, setFilterData }) => {
                         <input id="inputSearch" type="text" name="text" class="search" placeholder="Recherchez ici!"/>
                     </div>
                     <div id='searchButton'>
-                        Rechercher ({data.length})
+                        Rechercher ({mapThis === "default" ? data.length : mapThis.length})
                     </div>
                 </div>
             </div>

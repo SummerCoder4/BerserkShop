@@ -45,7 +45,7 @@ const Home = () => {
 
     return(
         <div>
-            <Header data={data} setFilterData={setFilterData} />
+            <Header data={data} setFilterData={setFilterData} mapThis={mapThis} />
             <h2 id='annonceRoyaume'>ANNONCE DU ROYAUME</h2>
             <img id='patternViking' src={Pattern} />
             <div className='containerAnnonce'>
