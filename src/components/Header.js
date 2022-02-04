@@ -6,7 +6,8 @@ import { FcSearch} from 'react-icons/fc';
 import { Link } from "react-router-dom"
 import './Header.css'
 
-const Header = ({ data }) => {
+const Header = ({ data, handleSearch }) => {
+   
     return (
         <div className="headerContainer">
             <Link to='/'>
@@ -24,7 +25,13 @@ const Header = ({ data }) => {
                     </div>
                     <div className="searchBox">
                         <AiOutlineSearch />
-                        <input id="inputSearch" type="text" name="text" class="search" placeholder="Recherchez ici!"/>
+                        <input 
+                        id="inputSearch" 
+                        type="text" 
+                        name="text" 
+                        class="search" 
+                        placeholder="Recherchez ici!" 
+                        onChange={handleSearch}/>
                     </div>
                     <div id='searchButton'>
                         Rechercher ({data.length})
